@@ -11,5 +11,9 @@ class test_grupowe(unittest.TestCase):
         txt = grupowe.poloz("ALA MA KOTA")
         self.assertEqual(txt, "ala ma kota")
 
+    def test_replace(self):
+        txt = grupowe.zamien("Ala ma kota")
+        self.assertEqual(txt, "Ala ma psa")
+
 if __name__ == '__main__':
     unittest.main()
