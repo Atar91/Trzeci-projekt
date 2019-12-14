@@ -15,5 +15,9 @@ class test_grupowe(unittest.TestCase):
         txt = grupowe.zamien("Ala ma kota")
         self.assertEqual(txt, "Ala ma psa")
 
+    def test_count(self):
+        txt = grupowe.policz("Lubie jablka, jablka sa pyszne")
+        self.assertEqual(txt, 2)
+
 if __name__ == '__main__':
     unittest.main()
